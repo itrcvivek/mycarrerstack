@@ -1,0 +1,35 @@
+stages:
+  - build
+  - deploy
+
+build:
+   stage: build
+   only:
+      - tags
+   script:
+      - mkdir -p dist
+      - npm install --legacy-peer-deps
+      - npm install redux
+      - CI= npm run build
+      - ls
+      - echo "Build Successfully"
+   artifacts:
+       paths:
+         - build/
+       expire_in: 1 hour
+   only:
+    - main     
+
+deploy:
+   stage: deploy
+   image:
+     name: amazon/aws-cli
+     entrypoint: [""]
+   dependencies:
+     - build
+   script:
+     - aws --version
+     - aws s3 cp --acl public-read --recursive build s3://nikhil-nanda-website-dev
+     - echo "deployed successfully"
+   only:
+    - main

@@ -1,0 +1,266 @@
+.MuiInputBase-input{
+    padding: 10px !important;
+}
+/* Container for the entire list with height and scrolling */
+.user-list {
+  height: 300px;
+  overflow-y: scroll;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual card style */
+.user-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.0); /* Slight zoom effect on hover */
+}
+
+/* Image styling */
+.user-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+/* User info styling */
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.user-info p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Scrollbar styling (optional, for custom look) */
+.user-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.user-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.user-list::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.form-item {
+  margin-bottom: 10px;
+}
+
+.input-margin {
+  margin-left: 10px;
+}
+
+.submit-button {
+  margin-top: 10px;
+}
+.sidenav { 
+    /* height: 100vh;
+    overflow-x: hidden;  */
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  /* background-color: #0073e6;  */
+  border-radius: 50%; /* Makes it a circle */
+  display: flex; /* Enables flex layout */
+  align-items: center; /* Vertically centers the content */
+  justify-content: center; /* Horizontally centers the content */
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+  border: 2px #fff solid;
+}
+.circle{
+  position: absolute;
+    right: -11px;
+    top: -20px;
+}
+
+.centered-text {
+  color: #fff; /* Text color */
+  font-size: 15px; /* Text size */
+}
+.fffffff button[disabled]:hover::before {
+  content: attr(title);
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  top: -30px; /* Adjust the placement as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.fffffff button[disabled]:hover::before {
+  opacity: 1;
+}
+.user-icon {
+    border: 1px solid #ccc;
+    padding: 2px;
+    width: 50px;
+    height:50px;
+    border-radius: 100px;
+    transition: transform 0.2s;
+  }
+  .cutomUserIcon{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+  }
+  .user-icon:hover {
+    transform: scale(1.1);
+  }
+  .templateProfileIcon{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+  .iconEditImag{
+    color: #914e4e;
+    text-align: center;
+  }
+  .edit-icon {
+    display: none;
+    position: absolute;
+    right: -32px;
+    width: 30px !important;
+    top: 8px;
+    text-align: center;
+    border-radius: 12%;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .progress-bar {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .progress-ring {
+    transform: rotate(-90deg);
+  }
+  
+  .progress-ring-circle {
+    fill: transparent;
+    stroke: #0073e6; /* Color of the progress bar */
+    stroke-linecap: round;
+  }
+  
+  .iconDeleteImage{
+    font-size: 17px !important;
+    color: #914e4e;
+  }
+  .iconEditImag{
+    font-size: 17px !important;
+    color: #914e4e;
+  }
+  .user-icon:hover .edit-icon {
+    display: block;
+    display: block;
+   
+  }
+.eduSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: #e9cdcd7a;
+    border-radius: 10px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+}
+.boxUlEx{
+    text-transform: capitalize;
+}
+/* .borderLeft{
+    border-left: 1.5px solid #faf9f9;
+    padding-left: 9px;
+    margin-left: -12px;
+} */
+.MuiFormLabel-root{
+    overflow: inherit !important;
+    /* line-height: 5px !important; */
+    font-size: 14px !important;
+    height: 30px !important;
+}
+p{
+    font-size: 12px;
+}
+.textSelectIcon{
+    position: absolute !important;
+    text-align: center;
+    left: 20%;
+    bottom: 82%;
+}
+.textLayoutHead{
+    position: absolute;
+    /* height: 40px; */
+    background: #ee7d0c8a;
+    left: -20px;
+    width: 254px;
+    padding: 12px;
+    border-radius: 0px 45px 45px 0px;
+}
+.MuiDrawer-paper{
+    width: 300px !important;
+}
+@media (max-width:768px){
+    .shapedividers_com-1790::before{
+    background-size: 100% 90px;
+    background-position: 50% 0%;   
+    }  
+    .menuBar{
+        display: none !important;
+    }
+    .boxDridside{
+        padding: 0 !important;
+    }
+    .circle {
+      position: absolute;
+      right: -7px;
+      top: 0px;
+  }
+  .circle {
+    width: 29px;
+    height: 29px;}
+    .centered-text {
+      color: #fff; /* Text color */
+      font-size: 10px; /* Text size */
+    }
+    }
+  
+         
+     
